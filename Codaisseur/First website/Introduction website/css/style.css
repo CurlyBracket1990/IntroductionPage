@@ -1,0 +1,196 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #b38b6d;
+  font-family: Arial Black, Arial Black, Gadget, sans-serif;
+  color: #3B3A38;
+  height: 940px;
+}
+
+#profile-pic {
+  position: absolute;
+  right: 864px;
+  bottom: 342px;
+  width: 10%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%
+}
+
+h1 {
+  font-size: 20px;
+}
+
+#introduction-text {
+  border-radius: 10px;
+  display: inline-block;
+  padding: 10px;
+  margin: 20px;
+  border: 3px solid black;
+  min-height: 120px;
+  min-width: 1122px;
+  background-color: #d8a886;
+}
+
+#content-wrapper{
+  width: 100%;
+  text-align: center;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.wider-text-bubble::before {
+  content:"";
+  position:absolute;
+  bottom:-30px;
+  right:387px;
+  border-width:0 0 30px 50px;
+  border-style:solid;
+  border-color:transparent #7a937c;
+  display:block;
+  width:0;
+}
+
+.wider-text-bubble {
+  position:absolute;
+  bottom: 525px;
+  right: 475px;
+  padding:15px 30px;
+  margin:0;
+  width: 400px;
+  background:linear-gradient(#5b6d5c, #7a937c);
+  -webkit-border-top-left-radius:25px 50px;
+  -webkit-border-top-right-radius:25px 50px;
+  -webkit-border-bottom-right-radius:25px 50px;
+  -webkit-border-bottom-left-radius:25px 50px;
+  -moz-border-radius:25px / 50px;
+  border-radius:25px / 50px;
+}
+
+.wider-text-bubble-left::before {
+  content:"";
+  position:absolute;
+  bottom:-30px;
+  right:27px;
+  border-width:0px 50px 30px 0px;
+  border-style:solid;
+  border-color:transparent #7a937c;
+  display:block;
+  width:0;
+}
+
+.wider-text-bubble-left {
+  position:absolute;
+  bottom: 525px;
+  right: 955px;
+  padding:15px 30px;
+  margin:0;
+  width: 400px;
+  background:linear-gradient(#5b6d5c, #7a937c);
+  -webkit-border-top-left-radius:25px 50px;
+  -webkit-border-top-right-radius:25px 50px;
+  -webkit-border-bottom-right-radius:25px 50px;
+  -webkit-border-bottom-left-radius:25px 50px;
+  -moz-border-radius:25px / 50px;
+  border-radius:25px / 50px;
+}
+
+.normal-text-bubble::before {
+  content:"";
+  position:absolute;
+  bottom:-30px;
+  right:287px;
+  border-width:0 0 30px 50px;
+  border-style:solid;
+  border-color:transparent #7a937c;
+  display:block;
+  width:0;
+}
+
+.normal-text-bubble {
+  position:absolute;
+  bottom: 525px;
+  right: 575px;
+  padding:15px 30px;
+  margin:0;
+  width: 300px;
+  background:linear-gradient(#5b6d5c, #7a937c);
+  -webkit-border-top-left-radius:25px 50px;
+  -webkit-border-top-right-radius:25px 50px;
+  -webkit-border-bottom-right-radius:25px 50px;
+  -webkit-border-bottom-left-radius:25px 50px;
+  -moz-border-radius:25px / 50px;
+  border-radius:25px / 50px;
+}
+
+.smaller-text-bubble::before {
+  content:"";
+  position:absolute;
+  bottom:-30px;
+  right:87px;
+  border-width:0 0 30px 50px;
+  border-style:solid;
+  border-color:transparent #7a937c;
+  display:block;
+  width:0;
+}
+
+.smaller-text-bubble {
+  position:absolute;
+  bottom: 525px;
+  right: 775px;
+  padding:15px 30px;
+  margin:0;
+  width: 100px;
+  background:linear-gradient(#5b6d5c, #7a937c);
+  -webkit-border-top-left-radius:25px 50px;
+  -webkit-border-top-right-radius:25px 50px;
+  -webkit-border-bottom-right-radius:25px 50px;
+  -webkit-border-bottom-left-radius:25px 50px;
+  -moz-border-radius:25px / 50px;
+  border-radius:25px / 50px;
+}
+
+/*
+Prevents arrow from being selected when clicking the body element to quickly
+*/
+
+#arrow-picture {
+        user-select: none;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -o-user-select: none;
+        width: 20%;
+        float: right;
+}
+
+#content-wrapper {
+        user-select: none;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -o-user-select: none;
+}
+
+arrow-container p{
+    float:left;
+}
+
+#arrow-container{
+  position: absolute;
+  bottom: 465px;
+  right: 955px;
+}
