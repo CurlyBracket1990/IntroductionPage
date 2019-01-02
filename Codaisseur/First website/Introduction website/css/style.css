@@ -4,14 +4,27 @@ body {
   background-color: #b38b6d;
   font-family: Arial Black, Arial Black, Gadget, sans-serif;
   color: #3B3A38;
-  height: 940px;
+  overflow-x :hidden;
+}
+
+#arrow-picture{
+  width:20%;
+  float: right;
+}
+
+#picture-wrapper{
+  position: relative;
+  right: -44%;
+  bottom: -200px;
+  height: 10%;
+  width: 10%;
 }
 
 #profile-pic {
-  position: absolute;
-  right: 864px;
-  bottom: 342px;
-  width: 10%;
+  position: relative;
+  right: 10px;
+  bottom: 10px;
+  width: 192px;
   height: auto;
   border-radius: 50%;
 }
@@ -34,7 +47,7 @@ h1 {
   margin: 20px;
   border: 3px solid black;
   min-height: 120px;
-  min-width: 1122px;
+  min-width: 80%;
   background-color: #d8a886;
 }
 
@@ -51,6 +64,46 @@ h1 {
   visibility: visible;
 }
 
+.likes{
+  padding: 0 10px 10px 10px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.inline{
+  display: inline;
+}
+
+#first{
+  position: relative;
+  top: 0px;
+  left: 74%;
+}
+
+#second{
+  position: relative;
+  top: -300px;
+  left: 0px;
+}
+
+#third{
+  position: relative;
+  top: -0px;
+  left: -74%;
+}
+
+#fourth{
+  opacity: 0.00;
+}
+
+.dn {
+  display: none;
+}
+
+a {
+  text-decoration: underline;
+}
+
 .wider-text-bubble::before {
   content:"";
   position:absolute;
@@ -64,17 +117,15 @@ h1 {
 }
 
 .wider-text-bubble {
-  position:absolute;
-  bottom: 525px;
-  right: 475px;
+  display: inline-block;
+  position:relative;
+  bottom: 285px;
+  right: -105px;
   padding:15px 30px;
   margin:0;
   width: 400px;
   background:linear-gradient(#5b6d5c, #7a937c);
-  -webkit-border-top-left-radius:25px 50px;
-  -webkit-border-top-right-radius:25px 50px;
-  -webkit-border-bottom-right-radius:25px 50px;
-  -webkit-border-bottom-left-radius:25px 50px;
+  -webkit-border-radius:25px 50px;
   -moz-border-radius:25px / 50px;
   border-radius:25px / 50px;
 }
@@ -92,17 +143,15 @@ h1 {
 }
 
 .wider-text-bubble-left {
-  position:absolute;
-  bottom: 525px;
-  right: 955px;
+  display: inline-block;
+  position:relative;
+  bottom: 313px;
+  right: 375px;
   padding:15px 30px;
   margin:0;
   width: 400px;
   background:linear-gradient(#5b6d5c, #7a937c);
-  -webkit-border-top-left-radius:25px 50px;
-  -webkit-border-top-right-radius:25px 50px;
-  -webkit-border-bottom-right-radius:25px 50px;
-  -webkit-border-bottom-left-radius:25px 50px;
+  -webkit-border-radius:25px 50px;
   -moz-border-radius:25px / 50px;
   border-radius:25px / 50px;
 }
@@ -120,17 +169,15 @@ h1 {
 }
 
 .normal-text-bubble {
-  position:absolute;
-  bottom: 525px;
-  right: 575px;
+  display: inline-block;
+  position:relative;
+  bottom: 313px;
+  right: -80px;
   padding:15px 30px;
   margin:0;
   width: 300px;
   background:linear-gradient(#5b6d5c, #7a937c);
-  -webkit-border-top-left-radius:25px 50px;
-  -webkit-border-top-right-radius:25px 50px;
-  -webkit-border-bottom-right-radius:25px 50px;
-  -webkit-border-bottom-left-radius:25px 50px;
+  -webkit-border-radius:25px 50px;
   -moz-border-radius:25px / 50px;
   border-radius:25px / 50px;
 }
@@ -148,17 +195,15 @@ h1 {
 }
 
 .smaller-text-bubble {
-  position:absolute;
-  bottom: 525px;
-  right: 775px;
+  display: inline-block;
+  position:relative;
+  bottom: 275px;
+  right: -90px;
   padding:15px 30px;
   margin:0;
   width: 100px;
   background:linear-gradient(#5b6d5c, #7a937c);
-  -webkit-border-top-left-radius:25px 50px;
-  -webkit-border-top-right-radius:25px 50px;
-  -webkit-border-bottom-right-radius:25px 50px;
-  -webkit-border-bottom-left-radius:25px 50px;
+  -webkit-border-radius:25px 50px;
   -moz-border-radius:25px / 50px;
   border-radius:25px / 50px;
 }
@@ -167,17 +212,7 @@ h1 {
 Prevents arrow from being selected when clicking the body element to quickly
 */
 
-#arrow-picture {
-        user-select: none;
-        -moz-user-select: none;
-        -khtml-user-select: none;
-        -webkit-user-select: none;
-        -o-user-select: none;
-        width: 20%;
-        float: right;
-}
-
-#content-wrapper {
+#arrow-picture, #content-wrapper, #profile-picture {
         user-select: none;
         -moz-user-select: none;
         -khtml-user-select: none;
@@ -190,7 +225,73 @@ arrow-container p{
 }
 
 #arrow-container{
-  position: absolute;
-  bottom: 465px;
-  right: 955px;
+  position: relative;
+  bottom: 380px;
+  right: 230px;
+  width: 325px;
+}
+
+/* 
+Resizing bubble for diferent viewports
+*/
+
+@media (max-width: 1000px){
+  .normal-text-bubble {
+    width: 200px;
+  }
+
+  .normal-text-bubble::before{
+    right: 185px;
+  }
+
+  .wider-text-bubble-left{
+    width: 300px;
+    right: 285px;
+  }
+
+  .wider-text-bubble{
+    width: 200px;
+    bottom: 320px;
+    right: -105px;
+  }
+
+  .smaller-text-bubble{
+    right: -105px;
+  }
+
+  .wider-text-bubble::before{
+    right: 185px;
+  }
+}
+
+@media (max-width: 750px){
+  
+  .normal-text-bubble {
+    width: 100px;
+    bottom: 395px;
+    right: -90px;
+  }
+
+  .normal-text-bubble::before {
+    right:85px;
+  }
+
+  #arrow-container {
+    bottom: 469px;
+  }
+
+  .wider-text-bubble-left{
+    width: 260px;
+    right: 230px;
+    bottom: 340px;
+  }
+
+  .wider-text-bubble{
+    width: 100px;
+    bottom: 400px;
+  }
+
+  .wider-text-bubble::before{
+    right: 85px;
+  }
 }
